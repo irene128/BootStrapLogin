@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+<title>Login</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center custom-font">A project to learn BootStrap Modal</h1>
+            <p class="text-center">
+                <button type="button" data-target="#login-modal" data-toggle="modal" class="btn btn-primary custom-font">Login</button>
+            </p>
+        </div>
+    </div>
+
+<div class="modal fade" id="login-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="container">
+              <div class="row justify-content-center align-items-center">
+                  <div class="col-12 col-md-4 text-center">
+                  <img id="logo" title="Icon made by monkik from www.flaticon.com" src="images/puzzle.png" alt="Icon made by monkik from www.flaticon.com">
+                  </div>
+                  <div class="col-12 col-md-8 text-center">
+                      <h5 class="modal-title">ABC Company</h5>
+                  </div>
+              </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+          <div id="login-forms">
+              <form>
+                <div>Type your E-mail and password:</div>
+                  <input class="form-control" placeholder="Email" type="text" required>
+                  <input class="form-control" placeholder="Password" type="Password" required>
+                  <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me!
+                    </label>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary">Login</button>
+        <button type="button" class="btn btn-outline-primary">Sign up</button>
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
